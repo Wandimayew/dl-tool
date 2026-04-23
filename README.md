@@ -26,7 +26,7 @@ Install ffmpeg (Linux)
 sudo apt update
 sudo apt install ffmpeg
 2. Clone repository
-git clone https://github.com/your-username/dl-tool.git
+git clone https://github.com/Wandimayew/dl-tool.git
 cd dl-tool
 3. Install dependencies
 pip install -r requirements.txt
