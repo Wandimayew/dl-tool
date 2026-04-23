@@ -5,10 +5,15 @@ def main():
     args = sys.argv[1:]
 
     if not args:
-        print("Use: dl --help")
+        print("DL Tool - use --help")
         return
 
-    handle_command(args)
+    try:
+        handle_command(args)
+    except KeyboardInterrupt:
+        print("\n❌ Cancelled by user")
+    except Exception as e:
+        print(f"\n❌ Error: {e}")
 
 if __name__ == "__main__":
     main()

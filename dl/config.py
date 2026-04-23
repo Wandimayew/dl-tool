@@ -1,12 +1,22 @@
 import json
 import os
 
-CONFIG_PATH = "config.json"
+CONFIG_FILE = "config.json"
+
+DEFAULT_CONFIG = {
+    "download_folder": os.path.expanduser("~/Downloads")
+}
+
 
 def load_config():
-    with open(CONFIG_PATH, "r") as f:
+    if not os.path.exists(CONFIG_FILE):
+        save_config(DEFAULT_CONFIG)
+        return DEFAULT_CONFIG
+
+    with open(CONFIG_FILE, "r") as f:
         return json.load(f)
 
+
 def save_config(cfg):
-    with open(CONFIG_PATH, "w") as f:
+    with open(CONFIG_FILE, "w") as f:
         json.dump(cfg, f, indent=2)

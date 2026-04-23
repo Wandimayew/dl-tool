@@ -1,5 +1,7 @@
 __pycache__/
 *.pyc
-*.log
+config.json
 dl_history.log
-.env
+dist/
+build/
+*.egg-info/

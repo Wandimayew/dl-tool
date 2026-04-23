@@ -6,6 +6,7 @@ dl/cli.py
 dl/config.py
 dl/core.py
 dl/history.py
+dl/ui.py
 dl_tool.egg-info/PKG-INFO
 dl_tool.egg-info/SOURCES.txt
 dl_tool.egg-info/dependency_links.txt

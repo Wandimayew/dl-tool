@@ -1,7 +1,11 @@
 Metadata-Version: 2.4
 Name: dl-tool
 Version: 1.0.0
+Summary: Terminal video downloader using yt-dlp with IDM-style UI
+Author: Wandi
 License-File: LICENSE
 Requires-Dist: yt-dlp
+Dynamic: author
 Dynamic: license-file
 Dynamic: requires-dist
+Dynamic: summary
