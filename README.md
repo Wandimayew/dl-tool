@@ -16,9 +16,7 @@ A fast, lightweight terminal-based video downloader powered by yt-dlp with an ID
 
 📦 Installation
 1. Requirements
-
 Make sure you have:
-
 Python 3.8+
 pip
 ffmpeg (recommended)
